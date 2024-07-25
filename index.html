@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <title>Assignment-2</title>
 </head>
 <body>
     <!-- header section start from here -->
     <header class="header">
         <!-- navbar starts from here -->
-        <nav class="nav">
-            <div class="nav-logo">Fitness</div>
+        <nav class="navbar">
+            <div class="nav-logo"> <i>Fitness</i></div>
             <div class="nav-lists">
                 <ul class="nav-lists-items">
-                   <li><a href="">Home</a></li>
+                   <li id="home"><a href="">Home</a></li>
                    <li><a href="">Service</a></li>
                    <li><a href="">Contact</a></li>
                    <li><a href="">About</a></li>
                 </ul>
+                <div class="bar-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
            
 
@@ -25,7 +30,7 @@
         <!-- navbar ends here -->
 
         <!-- banner section starts from here -->
-        <div class="banner">
+        <div class="banner hide">
             <div class="banner-content-container">
                 <h1 class="banner-content-header">
                     Get body in <i>shape</i>& stay healthy
@@ -58,7 +63,7 @@
     <!-- header section ends here -->
 
     <!-- main section starts from here -->
-    <main>
+    <main class="hide">
         <!-- change-habit-section starts from here -->
         <section class="change-habit-section">
            <div class="habit-header-container">
@@ -278,7 +283,7 @@
 
 
     <!-- footer section starts from here -->
-    <footer>
+    <footer class="hide">
        <div class="footer">
             <div class="footer-content-container">
                 <div class="footer-column-1" >

@@ -9,4 +9,91 @@
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+    background-color: black;
 }
+/* shared styles */
+.hide {
+    display: none;
+}
+/* header style starts from here */
+.header {
+    border: 2px solid rebeccapurple;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: white;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+/* navbar styles starts from here */
+.navbar {
+    display: flex;
+    max-width: 1060;
+    margin: 57px 190px 97px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-logo {
+    color: #E6533C ;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.nav-lists {
+    width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+}
+.nav-lists-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-right: 20px;
+}
+.nav-lists-items li {
+    list-style: none;
+}
+.nav-lists-items a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1.125rem;
+}
+#home {
+    width: 92px;
+    height: 38px;
+    background-color: #E6533C;
+    color: #ffffff;
+    border-radius: 46px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+}
+.bar-icon {
+    display: none;
+}
+/* navbar styles end here */
+
+/* header style ends here */
+
+/* responsive styles for small devices starts from here */
+@media screen and (max-width:576px) {
+    .navbar {
+        margin: 52px 20px;
+    }
+    .nav-lists {
+        border: none;
+        width: auto;
+    }
+    .nav-lists-items {
+        display: none;
+    }
+    .bar-icon {
+        display: inline;
+        font-size: 24px;
+    }
+    
+    
+}
+/* responsive styles for small devices end here */
