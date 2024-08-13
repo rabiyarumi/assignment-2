@@ -250,10 +250,14 @@ background: rgb(34, 34, 34);
     width: 40%;
     height: 310px;
     background-image: url(../images/run.jpg);
-    background-position: bottom left;
+    /* background-attachment: fixed; */
+    /* background-position-x: 100% ;
+    background-position-y: 7px; */
+    background-position: center;
     background-size: cover;
+    /* resize: both; */
     border-radius: 18px;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 
 /* BMI section */
@@ -280,13 +284,15 @@ background: rgb(34, 34, 34);
 .bmi-chart {
     border: 1px solid palegreen;
     margin: 50px 0 50px 190px ;
+    max-width:  550px;
+
 
 }
 .bmi-chart-header {
     margin-bottom: 50px ;
 }
 .bmi-table {
-    max-width: 350px;
+    width:  115%;
     height: 210px;
     border-collapse: collapse;
 
@@ -362,6 +368,7 @@ background: rgb(34, 34, 34);
 }
 .team-img-4 {
     background-image: url(../images/trainer4.png);
+    background-position: center;
 }
 .team-img-5 {
     background-image: url(../images/trainer5.png);
@@ -372,8 +379,22 @@ background: rgb(34, 34, 34);
 .team {
     height: 272px;
     border-radius: 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
 }
-
+.trainer-name {
+    font-size: 1.25rem;
+    color: white;
+}
+.trainer-data {
+    border: 1px solid red;
+    width: 200px;
+    position: relative;
+    top: 210px;
+    left: 20px;
+}
 /* responsive styles for small devices starts from here */
 @media screen and (max-width: 576px) {
     /* shared styles */
@@ -472,11 +493,12 @@ background: rgb(34, 34, 34);
 
     }
     .bmi-header-container {
-        margin-left: 20px;
+        margin:  20px;
     }
     .bmi-chart {
-        margin: 20px ;
-        width: calc((100% - 20) / 2);
+        margin:30px 20px ;
+        width: calc((100vw - 20) / 2);
+        
     
     }
     .bmi-chart table {
@@ -487,6 +509,20 @@ background: rgb(34, 34, 34);
         margin: 20px;
     
     }
+    /* team section */
+    .team-img-1 {
+       display: none;
+    }
+    .team-img-4 {
+        display: none;
+    }
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+
+     }
+     .team-header-container {
+        max-width: 70vw;
+     }
     
     
 }
