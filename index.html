@@ -180,7 +180,7 @@
                     <h3 class="bmi-chart-header">
                         BMI Calculator Chart 
                     </h3>
-                    <table border="2px solid black">
+                    <table  class="bmi-table">
                        <thead>
                         <tr>
                             <th>BMI</th>
@@ -214,17 +214,19 @@
                     <p class="bmi-calculate-description">
                         Put your information correctly in this form to calculate your BMI. It will help you to organize a perfect workout routine
                     </p>
-                    <input type="text" placeholder="Height/cm">
-                    <input type="text" placeholder="Weight/kg">
-                    <input type="text" placeholder="Age">
-                    <select name="Sex" id="" placeholder="Sex">
-                        <option value="Male">Sex</option>
-                       
-                    </select>
-                   <select name="Activity" id="">
-                        <option value="Walking">Select an activity factor</option>
+                    <div class="bmi-calculator">
+                        <input type="text" placeholder="Height/cm">
+                        <input type="text" placeholder="Weight/kg">
+                        <input type="text" placeholder="Age">
+                        <select name="Sex" id="" placeholder="Sex">
+                            <option value="Male">Sex</option>
                         
-                   </select>
+                        </select>
+                        <select name="Activity" id="activity">
+                            <option value="Walking">Select an activity factor</option>
+
+                        </select>
+                    </div>
                    <div class="btn">
                     <button class="btn-primary">Calculate</button>
                    </div>
@@ -235,40 +237,40 @@
 
 
         <!-- our-team-section starts from here -->
-        <section class="team-section hide">
+        <section class="team-section ">
             <div class="team-header-container">
-                <h2 class="team-header section-header">Meet Our Team
+                <h2 class="team-header ">Meet Our Team
                 </h2>
-                <p class="team-header-description section-description">
+                <p class="team-header-description ">
                     We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
                 </p>
             </div>
             <div class="team-img-container">
-                <div class="team-img">
+                <div class="team-img-1 team">
                     <h5 class="trainer-name">Jerome Bell</h5>
                     <p class="prefesion">Trainer</p>
                 </div>
-               <div class="team-img">
+               <div class="team-img-2 team">
                 <h5 class="trainer-name">Cameron Williamson
                 </h5>
                 <p class="profession">trainer</p>
                </div>
-               <div class="team-img">
+               <div class="team-img-3 team">
                 <h5 class="trainer-name">Darrell Steward
                 </h5>
                 <p class="profession">trainer</p>
                </div>
-               <div class="team-img">
+               <div class="team-img-4 team">
                 <h5 class="trainer-name">Dianne Russell
                 </h5>
                 <p class="profession">trainer</p>
                </div>
-               <div class="team-img">
+               <div class="team-img-5 team">
                 <h5 class="trainer-name">Cody Fisher
                 </h5>
                 <p class="profession">trainer</p>
                </div>
-               <div class="team-img">
+               <div class="team-img-6 team">
                 <h5 class="trainer-name">Theresa Webb
                 </h5>
                 <p class="profession">trainer</p>
