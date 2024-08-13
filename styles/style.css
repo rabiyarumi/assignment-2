@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 *{
     margin: 0;
@@ -15,9 +16,45 @@ body {
 .hide {
     display: none;
 }
+p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.btn-primary  {
+    width: 224px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 42px;
+    background-color: #E6533C;
+    color: #FFFFFF;
+    font-size: 1.12rem;
+    display: inline;
+}
+.btn-secondery {
+    width: 224px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 42px;
+    background-color: transparent ;
+    color: #FFFFFF;
+    font-size: 1.12rem;
+    display: inline;
+    margin-left: 14px;
+}
 /* header style starts from here */
 .header {
-    border: 2px solid rebeccapurple;
     max-width: 1440px;
     margin: 0 auto;
     color: white;
@@ -26,8 +63,8 @@ body {
 /* navbar styles starts from here */
 .navbar {
     display: flex;
-    max-width: 1060;
-    margin: 57px 190px 97px;
+    max-width: 1060px;
+    margin: 57px 190px 84px;
     justify-content: space-between;
     align-items: center;
     
@@ -46,8 +83,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1.25rem;
     text-decoration: none;
     padding-right: 20px;
+    
 }
 .nav-lists-items li {
     list-style: none;
@@ -74,11 +113,131 @@ body {
     display: none;
 }
 /* navbar styles end here */
-
+/* banner style start */
+.banner {
+    display: flex;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.banner-content-container {
+    width: 50%;
+}
+.banner-content-header {
+    font-size: 4.87rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 100px;
+}
+#shape {
+    font-family: 'Miama', sans-serif;
+    font-size: 10rem;
+    font-weight: 400;
+                                                
+}
+.banner-content-descriptin {
+    margin:28px 0;
+}
+.btn {
+    margin-bottom: 77px;
+}
+.banner-img-container {
+    width: 50%;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position:bottom center;
+}
+.banner-img-child-1 {
+    width: 193px;
+    height: 98px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    top: 100px;
+    left: 300px;
+    padding: 17px 24px;
+}
+.banner-img-child-1 h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.banner-img-child-2 {
+    width: 190px;
+    height: 98px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    top: 296px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 13px;
+}
+.red-curcle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #E6533C;
+}
+.banner-img-child-2>div>h5 {
+    font-size: 24px;
+    font-weight: 900;
+    color: rgb(250, 250, 249);
+}
 /* header style ends here */
 
+/* change habit section */
+.change-habit-section {
+    border: 2px solid green;
+    max-width: 1060px;
+    margin: 100px auto;
+
+}
+.habit-header-container {
+    border: 1px solid red;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.habit-header-container p {
+    margin-top: 15px;
+}
+.habit-content-container {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-around;
+    margin-top: 58px;
+}
+.habit-img {
+    border-radius: 50%;
+
+}
+.habit-description {
+    text-align: center;
+}
+
 /* responsive styles for small devices starts from here */
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
+    /* shared styles */
+    #body {
+        margin: 0 auto;
+        
+    }
+    .btn-primary, .btn-secondery  {
+        width: 170px;
+    }
+    .header {
+        max-width: 100%
+        margin: 0;
+        padding: 0;
+    }
     .navbar {
         margin: 52px 20px;
     }
@@ -93,6 +252,50 @@ body {
         display: inline;
         font-size: 24px;
     }
+    /* banner */
+    .banner {
+        border: 1px solid white;
+        flex-direction: column;
+        margin: 52px 20px;
+        max-width: calc(100% - 40px) 
+    }
+    .banner-content-container {
+        width: calc(100%);
+        border: 1px solid pink;
+    }
+    .banner-content-header {
+        font-size: 3rem;
+        line-height: 60px;
+    }
+    #shape {
+        font-size: 6rem;
+    }
+    .banner-img-container {
+        width: 100%;
+        height: 590px;
+        
+    }
+
+    /* change habit section */
+    .change-habit-section {
+        border: 2px solid green;
+        max-width: calc(100% - 40px);
+        margin: 100px auto;
+    
+    }
+    .habit-content-container {
+        width: 338px;
+        margin: 58px auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        gap: 40px;
+        margin-top: 58px;
+    }
+    .habit-content {
+        border: 1px solid white;
+    }
+    
     
     
 }
